@@ -2,15 +2,10 @@
 
 ## Sed Indigetes statque an recisum victa vires
 
-Lorem markdownum cuncta manet secura quoque concavat ordine et manu, fissus
-stella eque. Exuritque spatiosi mihi sic capiebant, in tulerat ingratus
-distamus.
+VRee B.V. was founded in 2016 and is located in Eindhoven, The Netherlands that is part of the Brainport region, where digital innovation and collaboration is stimulated, funded and nurtured.
 
-Petunt transcurrere nuda coepere, visa sensit tauri si secundi en aquas? Errent
-Paean, ferre nimbisque non, namque sub pars, si in et. Placet negata haec; adhuc
-fore, feretrumque profecit vir contraque narret sidera an totaque legem. Illa
-sed media Ithacus pervenit fera; tum **non miraturus** non praebetis limine
-sceptrum.
+Since then it has grown and entered industries such as Training, Education, Defense, Engineering and Entertainment providing technology-based solutions and products using Virtual Reality. VRee B.V, has developed a platform independent full body multiplayer VR platform called VRee. VRee gives the opportunity to build interactive multiplayer VR applications such as but not limited to: Virtual Training, Serious Gaming, Digital Prototyping, and Location-based XR Entertainment.
+
 
 ## In tota tibi flere consequitur gelidis mitto
 
