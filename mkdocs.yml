@@ -1,0 +1,6 @@
+site_name: VRee Platform Documentation
+nav:
+    - Home: index.md
+    - About: getting-started.md
+
+theme: readthedocs
