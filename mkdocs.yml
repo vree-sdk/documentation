@@ -1,6 +1,11 @@
-site_name: VRee Platform Documentation
+site_name: VRee Platform for Unity
 nav:
     - Home: index.md
-    - About: getting-started.md
+    - Getting Started: getting-started.md
+    - Supported Hardware: supported-hardware.md
+    - VRee License: vree-license.md
+    - VRee Settings: vree-settings.md
+    - User Interface: user-interface.md
+    - Networking: networking.md
 
 theme: readthedocs
