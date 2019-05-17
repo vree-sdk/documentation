@@ -9,3 +9,6 @@ nav:
     - Networking: networking.md
 
 theme: readthedocs
+
+markdown_extensions:
+  - footnotes
