@@ -25,10 +25,10 @@ Additionally, in order to correctly send and receive multiplayer data, a firewal
 When building the application from Unity, the VRee SDK needs to know on what hardware the application will run on. These hardware targets can be changed in the `VRee > Settings` window.
 
 Select the Target HMD from the 'HMD Build targets'.
-![Alt] (/images/getting-started/hmd-build-target.png "Hmd Build Target.")
+![Alt](/images/getting-started/hmd-build-target.png "Hmd Build Target.")
 
 Then select all hardware the users will be using.
-![Alt] (/images/getting-started/inputdevice-build-target.png "Selected Input Devices Build Target.")
+![Alt](/images/getting-started/inputdevice-build-target.png "Selected Input Devices Build Target.")
 
 ## Render Target
 HTC Vive, Oculus Rift, GearVR, HTC Focus, Others

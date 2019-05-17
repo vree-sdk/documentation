@@ -13,7 +13,7 @@ If this field is filled in clients will attempt to connect to the server running
 
 # Networking Roles
 This role determines wether the application acts as a Server or Client. 
-![Alt] (/images/settings/networking-roles.png "Networking Roles.")
+![Alt](/images/settings/networking-roles.png "Networking Roles.")
 The options for the roles are:
 ###Server
 The server connecting all clients
@@ -26,7 +26,7 @@ Similar to AdminClient but can be used for permission reasons
 
 The other roles are implemented for future proofing, but have no current purpose.
 # Build Targets
-![Alt] (/images/settings/build-targets.png "Build Targets.")
+![Alt](/images/settings/build-targets.png "Build Targets.")
 ##HMD Build Targets
 The target of the build. Make sure you import/delete the hardware SDK's accordingly after switching target.
 Below this field the custom editor for the HMD Target is shown, if present.
@@ -36,7 +36,7 @@ A list of 'Adapter Definitions'. These adapters are added onto the player after 
 Below this list the custom editor for each adapter is shown, if present.
 
 # Player Settings
-![Alt] (/images/settings/player-settings.png "Player Settings.")
+![Alt](/images/settings/player-settings.png "Player Settings.")
 ##Player Configuration
 Is the player using a full-body or hands-only set up.
 
@@ -56,12 +56,12 @@ Enabling this boolen will allow attaching prefabs to the specified bones. Usuall
 Prefabs to use for the override flag above.
 
 # Server Camera Configuration
-![Alt] (/images/settings/server-camera-configuration.png "Server Camera Configuration.")
+![Alt](/images/settings/server-camera-configuration.png "Server Camera Configuration.")
 ##Server Ui Camera Configuration
 Prefab created on the server when a client connects. This camera will move accordingly with the user, and is displayed in the VRee UI.
 
 # Hardware Selection
-![Alt] (/images/settings/hardware-selection.png "Hardware Selection.")
+![Alt](/images/settings/hardware-selection.png "Hardware Selection.")
 ##Supported Hardware Selection
 2List that should contain all hardware and HMD's any of the users will be using. This list is futureproofing for when users have individual hardware in future versions.
 
@@ -69,7 +69,7 @@ Prefab created on the server when a client connects. This camera will move accor
 This reorderable List determines in which order adapters are ran. This way later adapters get the option to use the information of earlier ones, or overwrite them.
 
 # Local Server Player
-![Alt] (/images/settings/local-server-player.png "Local Server Player.")
+![Alt](/images/settings/local-server-player.png "Local Server Player.")
 ##Create Local Server Player
 When enabled a player is created for the server, switching from dedicated server to host.
 ##Add Render Camera
@@ -77,21 +77,21 @@ When enabled a camera is created for the server in the UI. Can be left off to re
 Recommended to be enabled when Create Local Server Player is enabled as well.
 
 # General
-![Alt] (/images/settings/general.png "General.")
+![Alt](/images/settings/general.png "General.")
 ##Calibration Delay
 Time in seconds before the calibration is started after giving a calibration command.
 ##Allow Body Dimension Scaling
 When enabled the bones position of the bones in the avatar can be changed. When disabled only the Hip bone's position can be changed.
 
 # Data Logger
-![Alt] (/images/settings/data-logger.png "Data Logger.")
+![Alt](/images/settings/data-logger.png "Data Logger.")
 ##Suppress Reliable Message Dropped Log
 When enabled no logs will be shown if a reliable packet was dropped.
 ##Data Logger Settings
 Contains settings describing what and how much the data logger should log.
 
 # User Settings
-![Alt] (/images/settings/user-settings.png "User Settings.")
+![Alt](/images/settings/user-settings.png "User Settings.")
 An optional list where developers can add their own ScriptableObjects. These can be retrieved through code by using 
 ```c#
 VReePlatform.GetSettings<T>
@@ -99,7 +99,7 @@ VReePlatform.GetSettings<T>
 where T is the type of the developers's ScriptableObject.
 
 # Events
-![Alt] (/images/settings/events.png "Events.")
+![Alt](/images/settings/events.png "Events.")
 ##VRee Platform Initialized Event
 This event is raised when the platform finished initialization.
 ##VRee Player Connected Event
@@ -110,6 +110,6 @@ This event is raised when a calibration command is given for a player.
 This event is raised when a player has finished the calibration procedure
 
 # Player Fields
-![Alt] (/images/settings/player-fields.png "Player Fields.")
+![Alt](/images/settings/player-fields.png "Player Fields.")
 This list of GameObjects is refered in the UI, and functions as the center of a users world.
 When this GameObject is moved, the users connected to this field will move with it.
