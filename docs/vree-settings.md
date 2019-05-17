@@ -1,10 +1,10 @@
-Using the VRee -> Settings button the Settings window will be opened. This chapter will walk through all the different options and their functions.
-All settings shown in the first ScriptableObject (DefaultSettings) are saved in an xml file and can be changed after making a build. – Check with Jesse
+Using the `VRee > Settings` button the Settings window will be opened. This chapter will walk through all the different options and their functions.
+All settings shown in the first ScriptableObject (DefaultSettings) are saved in an xml file and can be changed after making a build. Check with Jesse
 
 # Networking
 ![Alt] (/images/settings/networking.png "Networking.")
 ## Platform Id
-The platform id is used in network identification. A server running with ID 0 will accept all incoming connections, any other ID up to 255 can be used to only allow certain clients to connect. If the client and server agree on this ID the connection will be established, if these ID’s are different the connection request is ignored.
+The platform id is used in network identification. A server running with ID 0 will accept all incoming connections, any other ID up to 255 can be used to only allow certain clients to connect. If the client and server agree on this ID the connection will be established, if these ID's are different the connection request is ignored.
 ## Port
 UDP port which is used for the communication handshake.
 All networking traffic after the connection has been set up will be done for each player on the 'Selected Port + PlayerId'.
