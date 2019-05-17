@@ -1,4 +1,4 @@
-The VRee platform comes with an example interface that can be used for basic application testing. This UI is generated using MarkLight and does not scale with resolution. Because of this it’s recommended to set the game resolution scale to 1920x1080.
+The VRee platform comes with an example interface that can be used for basic application testing. This UI is generated using MarkLight and does not scale with resolution. Because of this it’s recommended to set the game resolution scale to `1920x1080`.
 
 ![Alt](/images/user-interface/full-hd-resolution.png "Setting the Unity game view to Full HD.")
 
@@ -6,7 +6,7 @@ The UI consists of four tabs: Configuration, Admin, Interact and Watch.
 
 ![Alt](/images/user-interface/overview.png "User interface overview.")
 
-The left side displays a list of currently `Connected Players` (figure above - 1). The list is automatically updated whenever a player connects. For each player, the `name`, `suit`, `gloves` and `player field` are displayed. Next to each of those, the battery level is shown if the battery level is under 20%. The battery icon next to the player name corresponds with the battery level of the client device.
+The left side displays a list of currently `Connected Players` (figure above - 1). The list is automatically updated whenever a player connects. For each player, the `name`, `body controller`, `hand controller` and `player field` are displayed. Next to each of those, the battery level is shown if the battery level is under 20%. The battery icon next to the player name corresponds with the battery level of the client device.
 
 The `Calibrate` and `Recenter` buttons are activated when one or multiple players are selected from the `Connected Players` list (figure above - 2). The calibrate button starts the calibration process and the recenter button sets the position of the player back to the selected `player field` defined in the [VRee Settings](/vree-settings).
 

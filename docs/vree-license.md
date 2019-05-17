@@ -18,7 +18,7 @@ The No License found! pop-up is shown when the application is started without a 
 
 The pop-up is also shown when a license was found, but the license is not valid on this machine. In this pop-up, the license keys are shown that correspond to this license. This issue can be resolved either by placing the correct license file in the license path, or by generating a new license (see Generating a License). When running from a build, the `License.lic` file should be next to the application executable.
 
-A new license can be generated without the VRee SDK in Unity by [downloading](TODO) TODO<<<<<<<<<<<<<<<<<< the `VRee Standalone License Request Tool`.
+A new license can be generated without the VRee SDK in Unity by [downloading](https://developer.vree.world/Downloads "VRee Downloads") the `VRee Standalone License Request Tool`.
 
 ![Alt](/images/license/license-not-found.png "License not found!")
 

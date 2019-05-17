@@ -6,8 +6,6 @@ A VRee Packet is essentially a wrapper around user data that can be easily sent 
 
 A packet can contain up to eight parameters. However, a packet can contain more data by creating a struct that holds multiple fields. Keep in mind that the maximum data size of a packet is `1400 bytes`, going over this value causes the packet to be split into multiple packets which increases packet drop rate.
 
-TODO high level overview <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< 
-
 ## Defining a Packet
 
 A packet is defined by creating a new class which extends from the PacketServerToClient base class or the PacketClientToServer base class. In the example shown below, a PacketServerToClient is created with one integer parameter.

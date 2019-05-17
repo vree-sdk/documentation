@@ -15,14 +15,14 @@ In order to use the VRee SDK for Unity, a valid license has to be installed on t
 
 # Preparing the Development Environment
 
-The VRee SDK requires a number of run-time components of the C++ libraries have to be installed. The C++ 2015 Redistributable can be downloaded from the [Microsoft Download Center](https://www.microsoft.com/en-us/download/details.aspx?id=53840).
+The VRee SDK requires a number of run-time components of the C++ libraries have to be installed. The `C++ 2015 Redistributable` can be downloaded from the [Microsoft Download Center](https://www.microsoft.com/en-us/download/details.aspx?id=53840).
 
 Additionally, in order to correctly send and receive multiplayer data, a firewall exception rule has to be added for Unity. This exception allows the SDK to communicate with players on the same network.
 
 
 # Selecting the Target Hardware
 
-When building the application from Unity, the VRee SDK needs to know on what hardware the application will run on. These hardware targets can be changed in the VRee > Settings window.
+When building the application from Unity, the VRee SDK needs to know on what hardware the application will run on. These hardware targets can be changed in the `VRee > Settings` window.
 
 TODO <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
@@ -37,4 +37,18 @@ ManusVR
 
 # Building the Application
 
-TODO <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+To build the server application, make sure `VRee Settings > Networking Roles > Windows Role` is set to `Server`. Next, navigate to `File > Build Settings...` to open the Build Settings. Set the platform to `PC, Mac & Linux Standalone` and set the `Architecture` to `x86_64`. Finally, press `Builld` to start building the server application.
+
+![Alt](/images/getting-started/windows-architecture.png "Windows build settings.")
+
+## Windows Client
+
+For HTC Vive, Oculus Rift and other Windows Clients, set the `VRee Settings > Networking Roles > Windows Role` to `Client` and follow the build steps above.
+
+![Alt](/images/getting-started/windows-client-role.png "Windows client role.")
+
+## Android Client
+
+For GearVR, HTC Focus and other Android Clients, set the `VRee Settings > Networking Roles > Android Role` to `Client`. Next, navigate to `File > Build Settings...` to open the Build Settings. Set the platform to `Android`. Finally, press `Builld` to start building the client application.
+
+![Alt](/images/getting-started/android-selected.png "Android build target.")
