@@ -28,16 +28,13 @@ When generating a new license, the request may fail. This can be due to several 
 
 - Incorrect user information
 	- Make sure the Username and Password field contain the correct VRee account information. `Uppercase I’s` may be confused with `lowercase L’s` and vice versa.
-
 - The machine already has a license key generated. 
 	- Remove the license key using the VRee License web interface before generating the license. 
 	- Download the license key and manually merge the license.
-
 - No internet connection is available.
-	- Generating the license requires the VRee SDK to communicate with the VRee License Server. Make sure the machine is connected to the internet.
-
+	- Generating the license requires the VRee SDK to communicate with the VRee License Server. Make sure the machine is connected to the internet.  
 - The VRee License is unavailable.
 	- Confirm that the server cannot be reached by going to the VRee License Page.
-	- Contact VRee if the License Server is unavailable.
+	- Contact VRee if the License Server is unavailable.  
 
 ![Alt](/images/license/license-request-failed.png "License not found!")

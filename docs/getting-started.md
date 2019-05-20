@@ -7,6 +7,8 @@ To get started using the VRee SDK for Unity, download the latest version of the 
 
 In Unity, go to `Assets > Import Package > Custom Package…` and select the VRee SDK for Unity. Make sure that all files are selected by clicking on the `All` button in the bottom left corner before importing the package using the `Import` button.
 
+Drag the `[VReePlatform]` prefab from `VRee Platform\Prefabs\` into the scene, or open the provided example scene.
+
 
 # Generating a License
 
