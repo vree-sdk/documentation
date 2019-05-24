@@ -1,5 +1,4 @@
 Using the `VRee > Settings` button the Settings window will be opened. This chapter will walk through all the different options and their functions.
-All settings shown in the first ScriptableObject (DefaultSettings) are saved in an xml file and can be changed after making a build. Check with Jesse
 
 # Networking
 ![Alt](../images/settings/networking.png "Networking.")
