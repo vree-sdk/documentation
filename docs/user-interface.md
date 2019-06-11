@@ -10,6 +10,9 @@ The left side displays a list of currently `Connected Players` (figure above - 1
 
 The `Calibrate` and `Recenter` buttons are activated when one or multiple players are selected from the `Connected Players` list (figure above - 2). The calibrate button starts the calibration process and the recenter button sets the position of the player back to the selected `player field` defined in the [VRee Settings](/vree-settings).
 
+![Alt](../images/user-interface/calibration-diagram.jpg "Calibration diagram.")
+*Calibration diagram*
+
 On the right side of the user interface, the `Player Configuration` is displayed (figure above - 3). The layout of this screen can be adjusted to your own personal liking using the buttons on the top right of the screen (figure above - 4). By default, the automatic layout is selected. This will automatically adjust the layout to the number of connected players.
 
 ![Alt](../images/user-interface/colormapped-settings.png "Settings mapped by color.")

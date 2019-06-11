@@ -72,7 +72,7 @@ Prefab created on the server when a client connects. This camera will move accor
 ![Alt](../images/settings/hardware-selection.png "Hardware Selection.")
 
 __Supported Hardware Selection__  
-2List that should contain all hardware and HMD's any of the users will be using. This list is futureproofing for when users have individual hardware in future versions.
+List that should contain all hardware and HMD's any of the users will be using. This list is futureproofing for when users have individual hardware in future versions.
 
 __Adapter Priority__  
 This reorderable List determines in which order adapters are ran. This way later adapters get the option to use the information of earlier ones, or overwrite them.

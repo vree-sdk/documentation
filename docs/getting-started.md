@@ -3,12 +3,16 @@ This chapter explains how to set up the development environment and how to get s
 
 # Downloading and Importing the SDK
 
-To get started using the VRee SDK for Unity, download the latest version of the SDK from the downloads page. Once the file has finished downloading, open `Unity 2017.4 LTS` or higher to import the SDK.
+To get started using the VRee SDK for Unity, download the latest version of the SDK from the downloads page. Once the file has finished downloading, open `Unity 2017.4 LTS` or higher.
 
+__Using Unity Package__  
 In Unity, go to `Assets > Import Package > Custom Package…` and select the VRee SDK for Unity. Make sure that all files are selected by clicking on the `All` button in the bottom left corner before importing the package using the `Import` button.
 
-Navigate to the Prerequisites folder and unpack the `SoftwareActivation.7z` file. When completed run the `activateLicense.bat` batch file to active a blank xSens license.
-Without this blank license Unity will appear to hang after clicking the play button with the VRee platform in the scene.
+__Using Example Project__  
+Extract the folder to your preferred location and open it as a Unity project.
+
+Navigate to the Prerequisites folder and unpack the `SoftwareActivation.7z` file. Run the `activateLicense.bat` batch file to active a blank xSens license.
+Without this blank license Unity will appear to hang after clicking the play button with the VRee platform in the scene.  
 __Please note:__ This is required even when __not__ using xSens hardware.
 
 Drag the `[VReePlatform]` prefab from `VRee Platform\Prefabs\` into the scene, or open the provided example scene.
@@ -32,20 +36,13 @@ When building the application from Unity, the VRee SDK needs to know on what har
 Select the Target HMD from the 'HMD Build targets'.
 ![Alt](../images/getting-started/hmd-build-target.png "Hmd Build Target.")
 
+The settings are usable for the following hardware:
+__3DOFDefault__  
+Can be used for any 3DOF headset that put's its rotational data onto Unity's Camera object.
+__Standalone__
+
 Then select all hardware the users will be using.
 ![Alt](../images/getting-started/inputdevice-build-target.png "Selected Input Devices Build Target.")
-
-## Render Target
-HTC Vive & Oculus Rift  
-GearVR  
-HTC Focus  
-Others
-
-## Input Targets
-SteamVR Controllers > Only position and rotation  
-xSens  
-ManusVR
-
 
 # Building the Application
 
@@ -61,6 +58,15 @@ For HTC Vive, Oculus Rift and other Windows Clients, set the `VRee Settings > Ne
 
 ## Android Client
 
-For GearVR, HTC Focus and other Android Clients, set the `VRee Settings > Networking Roles > Android Role` to `Client`. Next, navigate to `File > Build Settings...` to open the Build Settings. Set the platform to `Android`. Finally, press `Builld` to start building the client application.
+For GearVR, HTC Focus and other Android Clients, set the `VRee Settings > Networking Roles > Android Role` to `Client`. Next, navigate to `File > Build Settings...` to open the Build Settings. Set the platform to `Android`. Finally, press `Build` to start building the client application.
 
 ![Alt](../images/getting-started/android-selected.png "Android build target.")
+
+# Running the application
+
+Start both the client and server application, and wait for the client to connect.
+While connecting the client's screen will remain black.
+
+As soon as the connection is established the client will be visible on the server's UI, and a client side camera will be created.
+
+__Note:__ It's recommended to run the server and client on seperate systems. Unexpected behaviour may occur while running both applications on the same systems.
