@@ -1,5 +1,7 @@
 Using the `VRee > Settings` button the Settings window will be opened. This chapter will walk through all the different options and their functions.
 
+After opening the settings, first unfold the VReeSettings foldout. The following settings will become available:
+
 # Networking
 ![Alt](../images/settings/networking.png "Networking.")
 
@@ -90,7 +92,7 @@ Recommended to be enabled when Create Local Server Player is enabled as well.
 ![Alt](../images/settings/general.png "General.")
 
 __Calibration Delay__  
-Time in seconds before the calibration is started after giving a calibration command.
+Time in seconds before the calibration is started after giving a calibration command.  
 __Allow Body Dimension Scaling__  
 When enabled the bones position of the bones in the avatar can be changed. When disabled only the Hip bone's position can be changed.
 

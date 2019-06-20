@@ -115,3 +115,18 @@ After naming the definition select it and add a new item to the `Input Adapters`
 
 Go back to the settings and add the new definition to the Lists specified above.
 If you want to change the priority you can now reorder it in the `Adapter Priority` part of the `Hardware Selection` segment of the settings.
+
+#Bone Structure
+The VRee Player Model structure looks as following:
+
+ - [Player Prefab]
+    - Root
+        - Skeleton
+            - [Prefabs Unity's Mecanim bones]
+
+First, all bone data will be applied on the `hip bone` and all children of it.
+This data is inserted as `Global` position and rotations.
+
+Afterwards the data is put into the `Skeleton` and lastly into the `Root`. Because of this order of applying data, the data in the `Hips` and below are changed to `Local` positions and rotations relative to the `Skeleton` and `Root` bone.
+
+An example of this system is action is showcased by the `PlayerFieldAdapter`, where rotating and moving the Player's field, moves and rotates the player accordingly.
