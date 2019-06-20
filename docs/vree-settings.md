@@ -100,7 +100,7 @@ When enabled the bones position of the bones in the avatar can be changed. When 
 ![Alt](../images/settings/data-logger.png "Data Logger.")
 
 __Suppress Reliable Message Dropped Log__  
-When enabled no logs will be shown if a reliable packet was dropped.
+When enabled no logs will be shown if a reliable packet was dropped.  
 __Data Logger Settings__  
 Contains settings describing what and how much the data logger should log.
 
