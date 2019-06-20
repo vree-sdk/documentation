@@ -1,5 +1,6 @@
 Using the `VRee > Settings` button the Settings window will be opened. This chapter will walk through all the different options and their functions.
-All settings shown in the first ScriptableObject (DefaultSettings) are saved in an xml file and can be changed after making a build. Check with Jesse
+
+After opening the settings, first unfold the VReeSettings foldout. The following settings will become available:
 
 # Networking
 ![Alt](../images/settings/networking.png "Networking.")
@@ -73,7 +74,7 @@ Prefab created on the server when a client connects. This camera will move accor
 ![Alt](../images/settings/hardware-selection.png "Hardware Selection.")
 
 __Supported Hardware Selection__  
-2List that should contain all hardware and HMD's any of the users will be using. This list is futureproofing for when users have individual hardware in future versions.
+List that should contain all hardware and HMD's any of the users will be using. This list is futureproofing for when users have individual hardware in future versions.
 
 __Adapter Priority__  
 This reorderable List determines in which order adapters are ran. This way later adapters get the option to use the information of earlier ones, or overwrite them.
@@ -91,7 +92,7 @@ Recommended to be enabled when Create Local Server Player is enabled as well.
 ![Alt](../images/settings/general.png "General.")
 
 __Calibration Delay__  
-Time in seconds before the calibration is started after giving a calibration command.
+Time in seconds before the calibration is started after giving a calibration command.  
 __Allow Body Dimension Scaling__  
 When enabled the bones position of the bones in the avatar can be changed. When disabled only the Hip bone's position can be changed.
 
@@ -99,7 +100,7 @@ When enabled the bones position of the bones in the avatar can be changed. When 
 ![Alt](../images/settings/data-logger.png "Data Logger.")
 
 __Suppress Reliable Message Dropped Log__  
-When enabled no logs will be shown if a reliable packet was dropped.
+When enabled no logs will be shown if a reliable packet was dropped.  
 __Data Logger Settings__  
 Contains settings describing what and how much the data logger should log.
 

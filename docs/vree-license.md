@@ -6,6 +6,8 @@ The key files can be downloaded from the VRee Licenses page. Refer to the Licens
 
 To manually generate the license file, place the key files in the root of the project and select `Merge Keys` from the `VRee > Generate License…` window. This creates a License file using the supplied key files.
 
+Only the server application requires a license.
+
 #License management
 Managing the VRee licenses can be done through the license page on the developer portal. Go to `developer.vree.world` and log in using your VRee account information. Alternatively, the page can be loaded from Unity by navigating to `VRee > Generate License` and clicking on the `To Overview` button.
 

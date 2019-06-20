@@ -7,6 +7,8 @@ nav:
     - VRee Settings: vree-settings.md
     - User Interface: user-interface.md
     - Networking: networking.md
+    - Player: player.md
+    - Adapters: adapters.md
 
 theme: readthedocs
 
