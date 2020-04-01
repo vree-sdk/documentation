@@ -15,6 +15,9 @@ All networking traffic after the connection has been set up will be done for eac
 __Override Server Ip__  
 If this field is filled in clients will attempt to connect to the server running on the provided IP. If the field is left empty the client will attempt to discover the server in the LAN.
 
+When using a server outside your local network enable router port forwarding on server and client side. Ports 9999, 10000, 10001, 10002, 10003 should forwarded depending on the amount of expected connections. Increase the port by one for each connection.
+Refer to manual of your router to setup portforwarding on your specific device or contact support@vree.world. 
+
 # Networking Roles
 This role determines wether the application acts as a Server or Client. 
 ![Alt](../images/settings/networking-roles.png "Networking Roles.")
