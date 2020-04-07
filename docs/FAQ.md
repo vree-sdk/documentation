@@ -1,19 +1,19 @@
 Frequently asked questions
 
 # General
-__What is the VRee SDK?__  
+__What is the VRee SDK?__
   >  The VRee SDK allows developers to easily create multiplayer VR experiences. It supports a growing number of VR devices and features premade multiplayer scripts and an automated avatar system. At the moment the VRee SDK only works with Unity3D.
 
-__What does the VRee SDK do?__  
+__What does the VRee SDK do?__
   >  The VRee SDK manages server-client connections, object management, data synchronization, and hardware integration.
 
-__What doesn't the VRee SDK do?__  
+__What doesn't the VRee SDK do?__
   >  It does not provide object interaction, interactivity or user input. 
 
-__What hardware is supported?__  
+__What hardware is supported?__
   >  Currently supported: Oculus Rift(S), Oculus Quest, HTC Vive, HTC Vive Focus, Pico neo, Pico, Varyo-VR1, Manus VR gloves, Xsens Motion capture, Teslasuit 
 
-__How can I get support?__  
+__How can I get support?__
   >  Email: support@vree.world or join our Discord: LinkToDiscord
 
 # Unity SDK
