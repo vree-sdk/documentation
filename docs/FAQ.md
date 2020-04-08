@@ -31,7 +31,7 @@ A VRee license can be Activated in Unity or using the standalone license tool th
 
 
 __How do I create a VRee account?__    
-Please [register](www.vree.world/register) with your Unity Asset Store email or contact info@vree.world   
+Please [register](https://developer.vree.world/dashboard/register) with your Unity Asset Store email or contact info@vree.world   
 
 # General
 __What is the VRee SDK?__   
@@ -47,4 +47,4 @@ __What hardware is supported?__
 Currently supported: Oculus Rift(S), Oculus Quest, HTC Vive, HTC Vive Focus, Pico neo, Pico, Varyo-VR1, Manus VR gloves, Xsens Motion capture, Teslasuit    
 
 __How can I get support?__   
-Email: support@vree.world or join our [Discord]()   
+Email: support@vree.world or join our [Discord](https://discord.gg/ZeHYM8r)   
