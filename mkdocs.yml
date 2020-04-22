@@ -9,6 +9,7 @@ nav:
     - Networking: networking.md
     - Player: player.md
     - Adapters: adapters.md
+    - FAQ: FAQ.md
 
 theme: readthedocs
 
