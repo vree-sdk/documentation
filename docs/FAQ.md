@@ -31,7 +31,7 @@ A VRee license can be Activated in Unity or using the standalone license tool th
 
 
 __How do I create a VRee account?__    
-Please [register](https://developer.vree.world/dashboard/register) with your Unity Asset Store email or contact info@vree.world   
+For now please contact info@vree.world for your request.  
 
 # General
 __What is the VRee SDK?__   
