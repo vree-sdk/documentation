@@ -1,6 +1,7 @@
 This chapter explains what adapters do and how to use them.
 
-#Adapters
+# Adapters
+
 An adapter is a script that modifies or reads data from the VReeBodyModel.
 
 Adapters are executed every frame, in order of priority. This priority is set using the reorderable list in the [Settings](../vree-settings/#hardware-selection)
@@ -8,24 +9,33 @@ Adapters are executed every frame, in order of priority. This priority is set us
 ![Alt](../images/adapters/adapter-priority.jpg)
 
 All adapters have extend from the IVReeAdapter interface which adds the following:
+
 ```c#
 string AdapterName();
 ```
+
 Name of the adapter.
+
 ```c#
 int Priority { get; set; }
 ```
+
 Priority of the adapter, used internally.
+
 ```c#
 Player Player { get; set; }
 ```
+
 Reference to the Player the adapter belongs to.
+
 ```c#
 void Init();
 ```
+
 Init is called after the adapter fully created, and fields like Player have been set.
 
-#Defining an Adapter
+# Defining an Adapter
+
 Create a new script and make it extend from either `IVReeBodyAdapter` or `IVReeHandAdapter`
 
 The only difference between the two is the signature of the `AdapterCallback` method. The IVReeBodyAdapter uses the entire body, where the hand adapter takes an array of floats indicating the bend of each finger.
@@ -40,12 +50,14 @@ public string AdapterName()
 ```
 
 Define both the Priority and the Player:
+
 ```c#
 int Priority { get; set; }
 Player Player { get; set; }
 ```
 
 And run the any init code if required:
+
 ```c#
 void Init()
 {
@@ -67,47 +79,48 @@ The SetBonePosition and SetBoneRotation calls of the Body class allows you to ch
 There are two optional parameters in both of these calls, defining the `BoneTrackingSpace` and `BoneEditMode`.
 
 `BoneTrackingSpace` defines wether the data is in world or local space. This defaults to world.
-`BoneEditMode` defines how to handle the data. This defaults to CombineData.  
+`BoneEditMode` defines how to handle the data. This defaults to CombineData.
 
 - ReplaceData
 
-    >    *Replaces the existing data in the bone with the supplied data, multiplied by the neutral of the avatar*
+  > _Replaces the existing data in the bone with the supplied data, multiplied by the neutral of the avatar_
 
 - CombineData
 
-    >    *Combines the existing data in the bone with the supplied data, multiplied by the neutral of the avatar*
+  > _Combines the existing data in the bone with the supplied data, multiplied by the neutral of the avatar_
 
 - ReplaceDataRecursively
 
-    >    *Replaces the existing data in the bone and all of its children with the supplied data, multiplied by the neutral of the avatar*
+  > _Replaces the existing data in the bone and all of its children with the supplied data, multiplied by the neutral of the avatar_
 
 - CombineDataRecursively
 
-    >    *Combines the existing data in the bone and all of its children with the supplied data, multiplied by the neutral of the avatar*
+  > _Combines the existing data in the bone and all of its children with the supplied data, multiplied by the neutral of the avatar_
 
 - ReplaceDataIngoreNeutral
 
-    >    *Replaces the existing data in the bone with the supplied data, ingoring the neutral of the avatar*
+  > _Replaces the existing data in the bone with the supplied data, ingoring the neutral of the avatar_
 
 - CombineDataIngoreNeutral
 
-    >    *Combines the existing data in the bone with the supplied data, ingoring the neutral of the avatar*
+  > _Combines the existing data in the bone with the supplied data, ingoring the neutral of the avatar_
 
 - ReplaceDataRecursivelyIngoreNeutral
 
-    >    *Replaces the existing data in the bone and all of its children with the supplied data, ignoring the neutral of the avatar*
+  > _Replaces the existing data in the bone and all of its children with the supplied data, ignoring the neutral of the avatar_
 
 - CombineDataRecursivelyIngoreNeutral
 
-    >    *Combines the existing data in the bone and all of its children with the supplied data, ignoring the neutral of the avatar*
+  > _Combines the existing data in the bone and all of its children with the supplied data, ignoring the neutral of the avatar_
 
 - Ignore
 
-    >    *Do nothing*
+  > _Do nothing_
 
-Make sure that one, *and only one,* adapter uses the neutral after every `ReplaceData` for that bone. This makes sure the data is correct for the currently selected model.
+Make sure that one, _and only one,_ adapter uses the neutral after every `ReplaceData` for that bone. This makes sure the data is correct for the currently selected model.
 
-#Using the adapter
+# Using the adapter
+
 To use an adapter it has to be added to the `Selected Input Devices`, as well as the `Supported Hardware Selection` in the Settings.
 
 To be able to add it to these lists, first start by creating a new `AdapterDefinition` by going to `Assets -> Create -> VRee -> Adapters -> Add Adapter Definition`.
@@ -116,13 +129,14 @@ After naming the definition select it and add a new item to the `Input Adapters`
 Go back to the settings and add the new definition to the Lists specified above.
 If you want to change the priority you can now reorder it in the `Adapter Priority` part of the `Hardware Selection` segment of the settings.
 
-#Bone Structure
+# Bone Structure
+
 The VRee Player Model structure looks as following:
 
- - [Player Prefab]
-    - Root
-        - Skeleton
-            - [Prefabs Unity's Mecanim bones]
+- [Player Prefab]
+  - Root
+    - Skeleton
+      - [Prefabs Unity's Mecanim bones]
 
 First, all bone data will be applied on the `hip bone` and all children of it.
 This data is inserted as `Global` position and rotations.
