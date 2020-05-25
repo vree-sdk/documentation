@@ -4,9 +4,9 @@ This chapter explains what adapters do and how to use them.
 
 An adapter is a script that modifies or reads data from the VReeBodyModel.
 
-Adapters are executed every frame, in order of priority. This priority is set using the reorderable list in the [Settings](../vree-settings/#hardware-selection)
+Adapters are executed every frame, in order of priority. This priority is set using the reorderable list in the [Settings](./vree-settings/#hardware-selection)
 
-![Alt](../images/adapters/adapter-priority.jpg)
+![Alt](./images/adapters/adapter-priority.jpg)
 
 All adapters have extend from the IVReeAdapter interface which adds the following:
 

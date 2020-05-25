@@ -12,7 +12,7 @@ A packet is defined by creating a new class which extends from the PacketServerT
 public class MyPacketServerToClient : PacketServerToClient<int> { }
 ```
 
-If a packet is important and needs to be __more likely__ to arrive, the `IsReliable()` method can be overwritten to return true.
+If a packet is important and needs to be **more likely** to arrive, the `IsReliable()` method can be overwritten to return true.
 
 ```c#
 public override bool IsReliable()
@@ -44,10 +44,12 @@ VReePlatform.CreatePacket<MyPacketClientToServer>().Send(parameters)
 
 A packet can be received in two ways:
 
-*Option 1:* Adding a Packet Listener from any class to the packet.
+_Option 1:_ Adding a Packet Listener from any class to the packet.
+
 ```c#
 VReePlatform.CreatePacketCallbackListener<MyPacketClientToServer>().AddPacketListener(MyPacketClientToServerListener);
 ```
+
 ```c#
 public void MyPacketClientToServerListener()
 {
@@ -55,7 +57,8 @@ public void MyPacketClientToServerListener()
 }
 ```
 
-*Option 2:* Overriding the `OnReceive()` method in the packet class.
+_Option 2:_ Overriding the `OnReceive()` method in the packet class.
+
 ```c#
 public override bool OnReceive()
 {
@@ -63,22 +66,19 @@ public override bool OnReceive()
 }
 ```
 
-
 # Object Synchronization
 
 The VRee SDK for Unity allows developers to easily synchronize data using the Synchronization add-on. The synchronization plugin automatically synchronizes the data when the data has changed and bundles the information to optimize the network traffic.
 
-- By default, two synchronizers are included:
-	- `TransformSynchronizer` – synchronizes the position, rotation and scale of the Unity Transform component.
-	- `EnabledStateSynchronizer` – synchronizes the enabled state of the GameObject.
+- By default, two synchronizers are included: - `TransformSynchronizer` – synchronizes the position, rotation and scale of the Unity Transform component. - `EnabledStateSynchronizer` – synchronizes the enabled state of the GameObject.
 
 To start using the Synchronization add-on, simply add the `SynchronizedObject` component to a GameObject. This component marks the GameObject as synchronized and gives it a unique Id. On this component, the rate at which the data should be synchronized can be defined. By default, the synchronization rate is set to synchronize every frame.
 
-![Alt](../images/networking/synchronizedobject.png "GameObject with SynchronizedObject component added.")
+![Alt](./images/networking/synchronizedobject.png "GameObject with SynchronizedObject component added.")
 
 In the current state, the GameObject is marked as synchronized but nothing is being synchronized. To synchronize data, at least one Synchronizer has to be attached to the GameObject. In this example, the `TransformSynchronizer` is used. However, multiple synchronizers can be attached. As seen in the image below, the Synchronizer can override the synchronization rate set by the SynchronizedObject. Here, the synchronization rate for the TransformSynchronizer is set to once per second.
 
-![Alt](../images/networking/synchronizedobject-with-transformsynchronizer.png "Transform Synchronizer added to the synchronized object.")
+![Alt](./images/networking/synchronizedobject-with-transformsynchronizer.png "Transform Synchronizer added to the synchronized object.")
 
 To synchronize the Transform of the GameObject, only the SynchronizedObject and Synchronizer components are required. The object will now move, rotate and scale on all clients.
 
@@ -86,16 +86,16 @@ To synchronize the Transform of the GameObject, only the SynchronizedObject and 
 
 Custom synchronizers can be created take advantage of the Synchronization system’s automatic data bundling. In this example, we’ll create a `CustomSynchronizer` that synchronizes an integer. The class diagram shown below explains how the Synchronization system connects the classes necessary for synchronization. For the `CustomSynchronizer`, three new classes will be created: `CustomSynchronizer`, `CustomSynchronizerDataBundler` and `CustomSynchronizerBundledDataPacket`.
 
-![Alt](../images/networking/synchronization-class-diagram.png "Synchronization class diagram.")
+![Alt](./images/networking/synchronization-class-diagram.png "Synchronization class diagram.")
 
 - The `CustomSynchronizer`, this class extends from SynchronizerBase. This class defines the Data struct and is responsible for determining if the data has changed.
 - The `CustomSynchronizerDataBundler`, this class extends from SynchronizerDataBundlerBase which handles the data bundling.
 - The `CustomSynchronizerPacket`, this class extends from PacketServerToClient<CustomSynchronizer.Data[]> and contains the data bundled by the CustomSynchronizerDataBundler.
 
-A couple of virtual methods have to be overwritten in the CustomSynchronizer script. 
+A couple of virtual methods have to be overwritten in the CustomSynchronizer script.
 
-- The `Register()` method should call CustomSynchronizerData.RegisterSynchronizer() method with itself as parameter, this ensures that the data can arrive to the Client_Synchronize() method on the client. 
-- The `Server_DetectChange()` to set the Synchronize flag to true when the data has changed. 
+- The `Register()` method should call CustomSynchronizerData.RegisterSynchronizer() method with itself as parameter, this ensures that the data can arrive to the Client_Synchronize() method on the client.
+- The `Server_DetectChange()` to set the Synchronize flag to true when the data has changed.
 - The `Client_Synchronize()` method should validate the data type and update the local values with the data values.
 
 The data struct must contain an integer field storing the Id and any optional data fields. In this case, the `IntegerData` field is added.
@@ -163,7 +163,7 @@ public class CustomSynchronizer : SynchronizerBase
         return new Data() // <- Return the Data struct with the current integer data.
         {
             Id = AssignedId, // This value must be the AssignedId of the Synchronizer.
-            IntegerData = _integerData 
+            IntegerData = _integerData
         };
     }
 
@@ -221,4 +221,4 @@ internal class CustomSynchronizerBundledDataPacket : PacketServerToClient<Custom
 
 To get a better understanding of how the synchronization system works internally, refer to the following sequence diagrams.
 
-![Alt](../images/networking/synchronization-sequence-diagram.png "Synchronization sequence diagram.")
+![Alt](./images/networking/synchronization-sequence-diagram.png "Synchronization sequence diagram.")
