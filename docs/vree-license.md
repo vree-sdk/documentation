@@ -1,22 +1,22 @@
-This chapter details the usage of VRee license key files and license files. To generate a license, refer to [Getting Started – Generating a License](getting-started.md#generating-a-license)
+> Please refer to [Getting Started - Registering a License](getting-started.md#generating-a-license) to learn how to register a license.
 
-When a license is generated, a key file is generated that is linked to the machine on which the key was requested. This key file is placed in the root of the project. The VRee License file is created using all the key files present in the root of the project.
+# VRee License
 
-The key files can be downloaded from the VRee Licenses page. Refer to the License Management chapter for more information.
+In order to use the VRee SDK, a license seat has to be registered to your VRee Account. When the application is started as a server, the VRee SDK checks if a license is present in the root of the application.
 
-To manually generate the license file, place the key files in the root of the project and select `Merge Keys` from the `VRee > Generate License…` window. This creates a License file using the supplied key files.
+> A VRee License is only required on the server application.
 
-Only the server application requires a license.
+# License management
 
-#License management
-Managing the VRee licenses can be done through the license page on the developer portal. Go to `developer.vree.world` and log in using your VRee account information. Alternatively, the page can be loaded from Unity by navigating to `VRee > Generate License` and clicking on the `To Overview` button.
+The VRee license can have a number of active developer seats. Managing these developer seats can be done through the dashboard page on the [developer portal](https://developer.vree.world/dashboard).
 
-![Alt](./images/license/license-overview.png "No license found.")
+> Alternatively, the page can be opened from Unity by navigating to `VReeSDK > Register License...` and clicking on the `Open Developer Dashboard` button.
 
-In the top of the page the maximum amount of simultaneous licenses is shown, as well as the currently activated count.
+![Alt](./images/license/license-overview.png "License overview.")
 
-Each activated license is shown in the list below and can be downloaded or deleted using the interface buttons.
-The licenses can be freely removed and re-requested as many times as required. Keep in mind that a deleted license will no longer function on a VRee enabled application.
+License seats can be freely deleted and activated as many times as required. Keep in mind that when the license seat is deleted, the VRee SDK will no longer function on the device.
+
+If the license file is ever lost, it can be downloaded using the `Download license` button. Be sure to place the downloaded file in the root of the application.
 
 # Troubleshooting
 

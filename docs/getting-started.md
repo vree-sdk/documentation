@@ -21,7 +21,7 @@ The chosen port (found in `VReeSDK > Settings`) +1 for every player should be fo
 
 > Example: Port 9999 with 4 players. Ports 9999 to 10003 have to be port forwarded.
 
-## Generating a License
+## Registering a License
 
 To use the VRee SDK for Unity, a valid VRee license has to be installed on the machine. A license can be registered by going to `VReeSDK > Register License…`.
 
