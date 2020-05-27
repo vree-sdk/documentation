@@ -6,8 +6,8 @@ After opening the settings, first unfold the VReeSettings foldout. The following
 
 ![Alt](./images/settings/networking.png "Networking.")
 
-**Platform Id**  
-The platform id is used in network identification. A server running with ID 0 will accept all incoming connections, any other ID up to 255 can be used to only allow certain clients to connect. If the client and server agree on this ID the connection will be established, if these ID's are different the connection request is ignored.
+**SDK Id**  
+The SDK id is used in network identification. A server running with ID 0 will accept all incoming connections, any other ID up to 255 can be used to only allow certain clients to connect. If the client and server agree on this ID the connection will be established, if these ID's are different the connection request is ignored.
 
 **Port**  
 UDP port which is used for the communication handshake.
@@ -123,7 +123,7 @@ Contains settings describing what and how much the data logger should log.
 An optional list where developers can add their own ScriptableObjects. These can be retrieved through code by using
 
 ```c#
-VReePlatform.GetSettings<T>
+VReeSDK.GetSettings<T>
 ```
 
 where T is the type of the developers's ScriptableObject.
@@ -132,8 +132,8 @@ where T is the type of the developers's ScriptableObject.
 
 ![Alt](./images/settings/events.png "Events.")
 
-**VRee Platform Initialized Event**  
-This event is raised when the platform finished initialization.
+**VRee SDK Initialized Event**  
+This event is raised when the SDK finished initialization.
 
 **VRee Player Connected Event**  
 This event is raised when a player has successfully connected.

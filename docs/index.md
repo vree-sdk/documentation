@@ -1,1 +1,1 @@
-# The VRee Platform for Unity SDK
+# The VRee SDK for Unity SDK

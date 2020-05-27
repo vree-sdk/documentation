@@ -1,5 +1,3 @@
-This chapter explains what adapters do and how to use them.
-
 # Adapters
 
 An adapter is a script that modifies or reads data from the VReeBodyModel.

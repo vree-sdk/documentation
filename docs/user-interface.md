@@ -1,4 +1,4 @@
-The VRee platform comes with an example interface that can be used for basic application testing. This UI is generated using MarkLight and does not scale with resolution. Because of this it’s recommended to set the game resolution scale to `1920x1080`.
+The VRee SDK comes with an example interface that can be used for basic application testing. This UI is generated using MarkLight and does not scale with resolution. Because of this it’s recommended to set the game resolution scale to `1920x1080`.
 
 ![Alt](./images/user-interface/full-hd-resolution.png "Setting the Unity game view to Full HD.")
 
@@ -17,4 +17,4 @@ On the right side of the user interface, the `Player Configuration` is displayed
 
 ![Alt](./images/user-interface/colormapped-settings.png "Settings mapped by color.")
 
-Clicking on one of the color-coded icons shows the available options as seen in the figure above. These colorcodings are set configured in the `ColorMappings.txt` file in the `VRee Platform/Prerequisites` folder. Make sure to use `VRee -> Refresh Prerequisites` to copy the updated file to the root of the project.
+Clicking on one of the color-coded icons shows the available options as seen in the figure above. These colorcodings are set configured in the `ColorMappings.txt` file in the `VRee SDK/Prerequisites` folder. Make sure to use `VRee -> Refresh Prerequisites` to copy the updated file to the root of the project.

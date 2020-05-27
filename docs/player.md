@@ -1,5 +1,5 @@
 #VRee Player
-A VRee player is created for every user connected to the application. The following diagram shows the connection protocol after the PlatformId was confirmed.
+A VRee player is created for every user connected to the application. The following diagram shows the connection protocol after the SDKId was confirmed.
 
 ![Alt](./images/player/player-connection-diagram.jpg "Player Connection.")
 

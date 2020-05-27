@@ -1,15 +1,15 @@
-site_name: VRee Platform for Unity
+site_name: VRee SDK for Unity
 nav:
-    - Home: index.md
-    - Getting Started: getting-started.md
-    #- Supported Hardware: supported-hardware.md
-    - VRee License: vree-license.md
-    - VRee Settings: vree-settings.md
-    - User Interface: user-interface.md
-    - Networking: networking.md
-    - Player: player.md
-    - Adapters: adapters.md
-    - FAQ: FAQ.md
+  - Home: index.md
+  - Getting Started: getting-started.md
+  #- Supported Hardware: supported-hardware.md
+  - VRee License: vree-license.md
+  - VRee Settings: vree-settings.md
+  - User Interface: user-interface.md
+  - Networking: networking.md
+  - Player: player.md
+  - Adapters: adapters.md
+  - FAQ: FAQ.md
 
 theme: readthedocs
 
