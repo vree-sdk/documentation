@@ -1,10 +1,14 @@
 > Please refer to [Getting Started - Registering a License](getting-started.md#generating-a-license) to learn how to register a license.
 
-# VRee License
+# VRee license
 
 In order to use the VRee SDK, a license seat has to be registered to your VRee Account. When the application is started as a server, the VRee SDK checks if a license is present in the root of the application.
 
 > A VRee License is only required on the server application.
+
+## Offline license
+
+The VRee license may be used offline for a number of times. When running the application without an internet connection, a log will notify that an offline license count has been consumed.
 
 # License management
 
@@ -20,19 +24,16 @@ If the license file is ever lost, it can be downloaded using the `Download licen
 
 # Troubleshooting
 
-The following chapters can be used to troubleshoot license errors.
+## No license found pop-up
 
-## No License Found pop-up
+The `No License found!` pop-up is shown when the application is started without a valid license in the application root.
 
-The `No License found!` pop-up is shown when the application is started without a valid license. When no license file is found, the license path is shown in the pop-up. To resolve this issue, make sure the license path contains a license file named `License.lic`.
+To resolve this issue, make sure the license path contains the license file which may be [generated](getting-started.md#generating-a-license) or [downloaded](#license-management).
 
 ![Alt](./images/license/no-license-found.png "No license found.")
-
-The pop-up is also shown when a license was found, but the license is not valid on this machine. In this pop-up, the license keys are shown that correspond to this license. This issue can be resolved either by placing the correct license file in the license path, or by generating a new license (see Generating a License). When running from a build, the `License.lic` file should be next to the application executable.
-
-A new license can be generated without the VRee SDK in Unity by [downloading](https://developer.vree.world/Downloads "VRee Downloads") the `VRee Standalone License Request Tool`.
-
 ![Alt](./images/license/license-not-found.png "License not found!")
+
+A new license may also be generated using the [VRee Standalone License Request Tool](https://developer.vree.world/Downloads).
 
 ## License Request Failed pop-up
 

@@ -10,11 +10,13 @@ Extract the folder to your preferred location and open it as a Unity project.
 
 ## Installing Prerequisites
 
-The following prerequisites **must** be installed for the VRee SDK to work properly. Due to the way xSens handles their licenses, an blank xSens license has to be generated. Without this license, Unity will appear to hang after clicking the play button.
+The following prerequisites **must** be installed for the VRee SDK to work properly. Due to the way Xsens handles their licenses, an blank Xsens license has to be generated. Without this license, Unity will appear to hang after clicking the play button.
 
-Navigate to the `VReeSDK/Prerequisites` folder in your explorer and extract the `SoftwareActivation.7z` file. It's recommended to extract it outside of the project to prevent DLL conflicts. Run the `activateLicense.bat` batch file to active a blank xSens license.
+Navigate to the `VReeSDK/Prerequisites` folder in your explorer and extract the `SoftwareActivation.7z` file. It's recommended to extract it outside of the project to prevent DLL conflicts. Run the `activateLicense.bat` batch file to active a blank Xsens license.
 
 The VRee SDK requires the `C++ 2015 Redistributable`, which be downloaded from the [Microsoft Download Center](https://www.microsoft.com/en-us/download/details.aspx?id=53840).
+
+### Firewall
 
 Additionally, in order to correctly send and receive multiplayer data, a firewall exception rule has to be added for Unity. This exception allows the SDK to communicate with players on the same network.
 The chosen port (found in `VReeSDK > Settings`) +1 for every player should be forwarded:
@@ -84,4 +86,4 @@ Start both the client and server application and wait for the client to connect.
 
 As soon as the connection is established the client will be visible on the server's UI, and the client's screen will be rendered.
 
-> Note: It is recommended to run the server and client on separate systems. Unexpected behaviour may occur while running both applications on the same system.
+> Note: It is recommended to run the server and client on separate systems. Unexpected behavior may occur while running both applications on the same system.

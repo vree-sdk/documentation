@@ -1,8 +1,10 @@
-Using the `VRee > Settings` button the Settings window will be opened. This chapter will walk through all the different options and their functions.
+# VRee Settings
+
+Using the `VReeSDK > Settings` button the Settings window will be opened. This chapter will walk through all the different options and their functions.
 
 After opening the settings, first unfold the VReeSettings foldout. The following settings will become available:
 
-# Networking
+## Networking
 
 ![Alt](./images/settings/networking.png "Networking.")
 
@@ -13,15 +15,15 @@ The SDK id is used in network identification. A server running with ID 0 will ac
 UDP port which is used for the communication handshake.
 All networking traffic after the connection has been set up will be done for each player on the 'Selected Port + PlayerId'.
 
-**Override Server Ip**  
+**Override Server IP**  
 If this field is filled in clients will attempt to connect to the server running on the provided IP. If the field is left empty the client will attempt to discover the server in the LAN.
 
 When using a server outside your local network enable router port forwarding on server and client side. Ports 9999, 10000, 10001, 10002, 10003 should forwarded depending on the amount of expected connections. Increase the port by one for each connection.
 Refer to manual of your router to setup portforwarding on your specific device or contact support@vree.world.
 
-# Networking Roles
+## Networking Roles
 
-This role determines wether the application acts as a Server or Client.
+This role determines whether the application acts as a Server or Client.
 ![Alt](./images/settings/networking-roles.png "Networking Roles.")
 
 The options for the roles are:
@@ -38,7 +40,7 @@ A user without in-game model
 **ViewerClient**  
 Similar to AdminClient but can be used to distinguish users
 
-# Build Targets
+## Build Targets
 
 ![Alt](./images/settings/build-targets.png "Build Targets.")
 **HMD Build Targets**  
@@ -49,7 +51,7 @@ Below this field the custom editor for the HMD Target is shown, if present.
 A list of 'Adapter Definitions'. These adapters are added onto the player after it connects, and determines how to the player controls it's avatar.
 Below this list the custom editor for each adapter is shown, if present.
 
-# Player Settings
+## Player Settings
 
 ![Alt](./images/settings/player-settings.png "Player Settings.")
 
@@ -66,19 +68,19 @@ Prefab to instantiate for the local player, usually this will be a model without
 Prefab to instantiate for all other players.
 
 **Override HandsOnly Model**  
-Enabling this boolen will allow attaching prefabs to the specified bones. Usually used to put different models on hands/head (i.e. Headset and Controller models)
+Enabling this boolean will allow attaching prefabs to the specified bones. Usually used to put different models on hands/head (i.e. Headset and Controller models)
 
 **Override HMD, LeftHand, RightHand**  
 Prefabs to use for the override flag above.
 
-# Server Camera Configuration
+## Server Camera Configuration
 
 ![Alt](./images/settings/server-camera-configuration.png "Server Camera Configuration.")
 
-**Server Ui Camera Configuration**  
+**Server UI Camera Configuration**  
 Prefab created on the server when a client connects. This camera will move accordingly with the user, and is displayed in the VRee UI.
 
-# Hardware Selection
+## Hardware Selection
 
 ![Alt](./images/settings/hardware-selection.png "Hardware Selection.")
 
@@ -88,7 +90,7 @@ List that should contain all hardware and HMD's any of the users will be using. 
 **Adapter Priority**  
 This reorderable List determines in which order adapters are ran. This way later adapters get the option to use the information of earlier ones, or overwrite them.
 
-# Local Server Player
+## Local Server Player
 
 ![Alt](./images/settings/local-server-player.png "Local Server Player.")
 
@@ -98,7 +100,7 @@ When enabled a player is created for the server, switching from dedicated server
 When enabled a camera is created for the server in the UI. Can be left off to reduce performance impact.
 Recommended to be enabled when Create Local Server Player is enabled as well.
 
-# General
+## General
 
 ![Alt](./images/settings/general.png "General.")
 
@@ -107,7 +109,7 @@ Time in seconds before the calibration is started after giving a calibration com
 **Allow Body Dimension Scaling**  
 When enabled the bones position of the bones in the avatar can be changed. When disabled only the Hip bone's position can be changed.
 
-# Data Logger
+## Data Logger
 
 ![Alt](./images/settings/data-logger.png "Data Logger.")
 
@@ -116,7 +118,7 @@ When enabled no logs will be shown if a reliable packet was dropped.
 **Data Logger Settings**  
 Contains settings describing what and how much the data logger should log.
 
-# User Settings
+## User Settings
 
 ![Alt](./images/settings/user-settings.png "User Settings.")
 
@@ -128,7 +130,7 @@ VReeSDK.GetSettings<T>
 
 where T is the type of the developers's ScriptableObject.
 
-# Events
+## Events
 
 ![Alt](./images/settings/events.png "Events.")
 
@@ -144,9 +146,9 @@ This event is raised when a calibration command is given for a player.
 **VRee Calibration Finished Event**  
 This event is raised when a player has finished the calibration procedure
 
-# Player Fields
+## Player Fields
 
 ![Alt](./images/settings/player-fields.png "Player Fields.")
 
-This list of GameObjects is refered in the UI, and functions as the center of a users world.
+This list of GameObjects is referred in the UI, and functions as the center of a users world.
 When this GameObject is moved, the users connected to this field will move with it.
