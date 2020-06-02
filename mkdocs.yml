@@ -11,6 +11,7 @@ nav:
       - Object Synchronization: object-synchronization.md
       - Player: vree-player.md
       - Adapters: adapters.md
+      - Events: vree-events.md
       - "Custom scripts":
           - VReeMonoBehaviour: vree-monobehaviour.md
   - FAQ: FAQ.md
