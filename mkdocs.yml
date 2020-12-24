@@ -1,15 +1,24 @@
-site_name: VRee Platform for Unity
+site_name: VRee SDK for Unity
 nav:
-    - Home: index.md
-    - Getting Started: getting-started.md
-    #- Supported Hardware: supported-hardware.md
-    - VRee License: vree-license.md
-    - VRee Settings: vree-settings.md
-    - User Interface: user-interface.md
-    - Networking: networking.md
-    - Player: player.md
-    - Adapters: adapters.md
-    - FAQ: FAQ.md
+  - Home: index.md
+  - "Getting Started":
+      - Installation and Prerequisites: getting-started-installation.md
+      - Setup for Oculus Quest: getting-started-oculus.md
+      - Setup for OpenVR/SteamVR: getting-started-openvr.md
+      - Setup for Xsens: getting-started-xsens.md
+  - License: vree-license.md
+  - "Customize":
+      - Settings overview: vree-settings.md
+      - Networking: networking.md
+      - Object Synchronization: object-synchronization.md
+      - Player: vree-player.md
+      - Adapters: adapters.md
+      - Events: vree-events.md
+      - "Custom scripts":
+          - VReeMonoBehaviour: vree-monobehaviour.md
+          - VReePlayerBehaviour: vree-playerbehaviour.md
+  - FAQ: FAQ.md
+  - Troubleshooting: troubleshooting.md
 
 theme: readthedocs
 
