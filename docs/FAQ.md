@@ -32,7 +32,7 @@ Body motion
 - Teslasuit
 
 **Where do I download the VRee SDK?**  
-The SDK can be downloaded via the Unity Asset store or via http://developer.vree.world/dashboard/
+The SDK can be downloaded by creating an account and visiting your [dashboard](https://developer.vree.world/dashboard/).
 
 **How do I create a VRee account?**  
 You can register your account from the [developer portal](https://developer.vree.world/dashboard/register).

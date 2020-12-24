@@ -1,13 +1,13 @@
 # Object Synchronization
 
-The VRee SDK for Unity allows developers to easily synchronize data using the provided synchronization system. The synchronization system automatically synchronizes when the data has changed and bundles the information to optimize the network traffic.
+The VRee SDK for Unity allows developers to easily synchronize data using the provided synchronization system. The synchronization system automatically synchronizes when the data has changed and bundles the information to optimize the network traffic. Object synchronizers only work on objects that are in the scene on startup, instantiated objects will not be synchronized.
 
 By default, two synchronizers are included:
 
 - `TransformSynchronizer` - synchronizes the position, rotation and scale of the Unity Transform component.
 - `EnabledStateSynchronizer` - synchronizes the enabled state of the GameObject.
 
-# Using synchronizers
+## Using synchronizers
 
 To synchronize an object, simply add the `SynchronizedObject` component to a GameObject. This component marks the GameObject as synchronized and gives it a unique Id. On this component, the rate at which the data should be synchronized can be defined. By default, the synchronization rate is set to synchronize every frame (0).
 
@@ -17,7 +17,7 @@ With only a `SynchronizedObject`, the GameObject is marked as synchronized but n
 
 ![Alt](./images/object-synchronization/synchronizedobject-with-transformsynchronizer.png "Transform Synchronizer added to the synchronized object.")
 
-# Creating Custom Synchronizers
+## Creating Custom Synchronizers
 
 Custom synchronizers can be created take advantage of the Synchronization system’s automatic data bundling. In this example, we’ll create a `CustomSynchronizer` that synchronizes an integer. The class diagram shown below explains how the Synchronization system connects the classes necessary for synchronization. For the `CustomSynchronizer`, three new classes will be created: `CustomSynchronizer`, `CustomSynchronizerDataBundler` and `CustomSynchronizerBundledDataPacket`.
 

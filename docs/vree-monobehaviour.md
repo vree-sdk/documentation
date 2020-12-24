@@ -6,16 +6,6 @@ The `VReeMonoBehaviour` script extends the standard Unity `MonoBehaviour` with u
 
 The VReeMonoBehaviour can be created by right-clicking in the Project window and selecting `Create > VRee > VReeMonoBehaviour Script`. Alternatively, a script can extend `VReeMonoBehaviour`.
 
-The following method has to be implemented for the script to function properly.
-
-```c#
-public abstract SelectedBones AttachTo()
-```
-
-The AttachTo method should return which bone(s) the script should attached to. When the script is not reliant on placement to a specific bone SelectedBones.Root can be used.
-If the script should be placed on multiple bones the OR operator can be used:
-return SelectedBones.LeftHand | SelectedBones.RightHand;
-
 ## Utilization
 
 The `VReeMonoBehaviour` is useful for placing logic on specific bones in the player body. For example, a script that logs the position of the hands can be created as follows.
@@ -26,11 +16,13 @@ The `VReeMonoBehaviour` is useful for placing logic on specific bones in the pla
    public class HandPositionLogger : VReeMonoBehaviour { }
    ```
 
-1. Override the `AttachTo()` method to attach the script on the left and right hand.
+1. If the placement of the script on the body is important, override the `AttachTo()` method. This method returns which bone(s) the script should attached to. If the script should be placed on multiple bones the OR operator can be used:
+   return SelectedBones.LeftHand | SelectedBones.RightHand;
 
    ```c#
    public override SelectedBones AttachTo()
    {
+      // Attaches the script to the left and right hand bones.
        return SelectedBones.LeftHand | SelectedBones.RightHand;
    }
    ```

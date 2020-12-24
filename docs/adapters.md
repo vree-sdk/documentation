@@ -6,28 +6,7 @@ Adapters are executed every frame, in order of priority. This priority is set us
 
 ## Creating an adapter
 
-A new adapter can be created by extending from `AdapterBase`. Three methods can be overwritten:
-
-```c#
-public virtual void Init() { }
-```
-
-The `Init` method is called when the adapter is instantiated.
-
-```c#
-public virtual void Destruct() { }
-```
-
-The `Destruct` method is called when the adapter is destructed.
-
-```c#
-public virtual bool AdapterCallback(int pid, ref Body body)
-{
-    return false;
-}
-```
-
-The `AdapterCallback` method is called every frame. This method gets a reference of the body. In this method, the adapter's logic is placed. For example:
+A new adapter can be created by extending from `AdapterBase`. The `AdapterCallback` method is called every frame. This method gets a reference of the body. In this method, the adapter's logic is placed. For example, setting the hips to (x=0, y=1, z=0):
 
 ```c#
 // Move the hip bone up by 1 meter.
@@ -57,7 +36,7 @@ There are two optional parameters in both of these calls, defining the `BoneTrac
 - **CombineData**
   Combines the existing data in the bone with the supplied data, multiplied by the neutral of the avatar
 
-- **CombineDataIngoreNeutral**
+- **CombineDataIgnoreNeutral**
 
   Combines the existing data in the bone with the supplied data, ignoring the neutral of the avatar
 

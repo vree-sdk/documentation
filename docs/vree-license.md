@@ -4,7 +4,32 @@
 
 In order to use the VRee SDK, a license seat has to be registered to your VRee Account. When the application is started as a server, the VRee SDK checks if a license is present in the root of the application.
 
-> A VRee License is only required on the server application.
+A VRee License is only required on the server application.
+
+## Registering a license seat
+
+A license can be created in two ways, for both ways an account has to be registered on [VRee Developers](https://developer.vree.world/dashboard/register "VRee Developers"). With the registered account, a license seat can be registered.
+
+A license seat is only active on the computer it was activated on.
+
+**In the Unity Editor**
+
+1. In Unity, open a project with the VReeSDK installed.
+1. Go to `VReeSDK > Register license...`
+1. Enter your account details
+1. Enter license seat information and click `Register license for this device`
+
+![Alt](./images/license/license-unity-request.png "Request license in Unity.")
+
+**With the License Requestor tool**
+
+1. Login to your developer dashboard at [VRee Developers](https://developer.vree.world "VRee Developers")
+1. Download the `VRee standalone License Tool`
+1. Extract and run `LicenseRequestor.exe`
+1. Enter your account details
+1. Enter the license seat information and click `Request Key`
+
+![Alt](./images/license/license-requestor-tool.png "Request license in Unity.")
 
 ## Offline license
 

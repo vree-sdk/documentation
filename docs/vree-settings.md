@@ -22,7 +22,7 @@ When using a server outside your local network enable router port forwarding on 
 
 If the amount of expected players is unclear, a high number of ports can be forwarded to ensure all players can connect.
 
-Refer to manual of your router to setup portforwarding on your specific device or contact support@vree.world.
+Refer to manual of your router to setup port forwarding on your specific device or contact support@vree.world.
 
 **Override Server IP**  
 If this field is filled in clients will attempt to connect to the server running on the provided IP. If the field is left empty the client will attempt to discover the server in the LAN as usual.
@@ -57,7 +57,7 @@ The target of the build. This determines how the clients behave. Target HMDs can
 **Player Configuration**  
 Is the player using a full-body or hands-only set up.
 
-**Auto Correct Gloves**  
+**Auto Correct Hand Rotation**  
 When enabled this option will automatically correct invalid rotations on the wrists using IK.
 
 **First Person Prefab Model**  
@@ -93,7 +93,7 @@ How many seconds to wait before calibrating.
 ## Server Camera Configuration
 
 **Server Camera**  
-Prefab created on the head bone of a player. This camera displays the player's first-person view in the [VRee User Interface](user-interface.md).
+Prefab created on the head bone of a player. This camera renders the player's first-person view in the [VRee User Interface](user-interface.md).
 
 ## Local Server Player
 
@@ -114,6 +114,11 @@ When enabled no logs will be shown when a reliable packet was dropped.
 **Data Logger Settings**  
 Contains settings describing what and how much the data logger should log.
 
+## Recording & Playback
+
+**Playback mode**
+Enable to start the server in playback mode, this allows for playback of recorded sessions.
+
 ## User Settings
 
 An optional list where developers can add their own ScriptableObjects. These can be retrieved through code by using
@@ -124,8 +129,9 @@ VReeSDK.GetSettings<T>
 
 where `T` is the type of the user setting ScriptableObject.
 
-## Player Fields
+## Editor Settings
 
-A list of GameObjects. The `Player Field Adapter` places the player in the center of the player field.
+Defines the behaviour of the VRee SDK when running in the Unity Editor.
 
-When this player field is moved, the player(s) connected to this field will move with it.
+**Log Events**
+Log when a [VRee Event](vree-events.md) is raised.

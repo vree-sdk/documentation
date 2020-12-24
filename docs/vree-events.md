@@ -16,7 +16,7 @@ To add parameters to the event, click `Add`, search for the desired parameter ty
 
 Validate the summary and click `Generate` to generate the event.
 
-Finally, create the event instance by going to `Create > VReeSDK > Custom Events` and selecting the generated event. This created the scriptable object event instance which can be referenced from anywhere.
+Finally, create the event instance by going to `Create > VReeSDK > Events` and selecting the generated event. This created the scriptable object event instance which can be referenced from anywhere.
 
 ## Using VRee Events
 
@@ -35,14 +35,18 @@ private void Start()
 
 ### Listening
 
-Listening to a VRee Event can be done in the inspector or via code. The following code adds a listener to to event programmatically.
+Listening to a VRee Event can be done in the inspector or via code. The main way of working with events is via the inspector. Simply add an `EventListener` to an object and adding responses to the `response` Unity Event.
+
+![Alt](images/events/listening-via-inspector.png "Listening to a VRee Event.")
+
+The following code adds a listener to to event programmatically.
 
 ```c#
 public VRee.Events.Event MyEvent;
 
 private void Start()
 {
-    MyEvent.AddListener(OnMyEvent);
+    MyEvent.OnEvent += OnMyEvent;
 }
 
 public void OnMyEvent()
@@ -50,7 +54,3 @@ public void OnMyEvent()
     Debug.Log("MyEvent was raised!")
 }
 ```
-
-The same can be done by adding an `EventListener` to an object and adding responses to the Unity Event.
-
-![Alt](images/events/listening-via-inspector.png "Listening to a VRee Event.")
