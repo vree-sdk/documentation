@@ -4,18 +4,23 @@
 
 ## 1. Android Configuration
 
-- Android Module
+**Android Module**
+
   1. Open Unity Hub.
   1. Click on `Installs`
   1. Click on the three dots icon and select `Add Modules`
   1. Select `Android Build Support`
   1. Click `Done` to start the installation
-- VRee SDK Settings
+  
+**VRee SDK Settings**
+
   1. Open a Unity project with the VRee SDK installed
   1. Open the `VReeSDK` scene from `Assets > Scenes > VReeSDK`
   1. Go to `VReeSDK > Settings` to open the VRee SDK settings in the inspector
   1. In the `Settings` field, select the `Quest Settings`
-- Build and Player Settings
+
+**Build and Player Settings**
+
   1. Go to `File > Build Settings...`
   1. Select the `Android` Platform and click `Switch Platform`
   1. Click on `Player Settings`
