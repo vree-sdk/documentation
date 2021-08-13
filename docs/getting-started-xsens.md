@@ -5,6 +5,7 @@
 ## 1. Settings
 
 **VRee SDK Settings**
+
   1. Open a Unity project with the VRee SDK installed
   1. Open the `VReeSDK` scene from `Assets > Scenes > VReeSDK`
   1. Go to `VReeSDK > Settings` to open the VRee SDK settings in the inspector
