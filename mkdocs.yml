@@ -5,6 +5,7 @@ nav:
       - Installation and Prerequisites: getting-started-installation.md
       - Setup for Oculus Quest: getting-started-oculus.md
       - Setup for OpenVR/SteamVR: getting-started-openvr.md
+      - Setup for Pico Interactive: getting-started-pico.md
       - Setup for Xsens: getting-started-xsens.md
   - License: vree-license.md
   - "Customize":
@@ -17,6 +18,8 @@ nav:
       - "Custom scripts":
           - VReeMonoBehaviour: vree-monobehaviour.md
           - VReePlayerBehaviour: vree-playerbehaviour.md
+  - "Add-ons":
+      - Quest handtracking: QuestHandtracking.md
   - FAQ: FAQ.md
   - Troubleshooting: troubleshooting.md
 

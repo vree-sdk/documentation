@@ -4,11 +4,14 @@
 
 ## 1. Settings
 
-- Player Settings
-  1. Go to `Edit > Player Settings`
+**Player Settings**
+
+  1. Go to `Edit > Project Settings > Player Settings`
   1. Under `XR Settings` enable `Virtual Reality Supported`
   1. In the `Virtual Reality SDKs` list, add `OpenVR` by clicking on the plus icon
-- VRee SDK Settings
+
+**VRee SDK Settings**
+
   1. Open a Unity project with the VRee SDK installed
   1. Open the `VReeSDK` scene from `Assets > Scenes > VReeSDK`
   1. Go to `VReeSDK > Settings` to open the VRee SDK settings in the inspector
@@ -23,9 +26,11 @@
 
 Ensure the server and client pc are connected to the same local network.
 
-- On the server
+**On the server**
+
   1. In the VRee SDK Settings, disable `Create Local Server Player`
   2. Enter play mode
-- On the client
+**On the client**
+
   1. In the VRee SDK Settings, set `Windows Role` to `Client`
   1. With SteamVR installed, enter play mode
