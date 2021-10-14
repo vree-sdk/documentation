@@ -6,7 +6,7 @@
 
 **Player Settings**
 
-  1. Go to `Edit > Player Settings`
+  1. Go to `Edit > Project Settings > Player Settings`
   1. Under `XR Settings` enable `Virtual Reality Supported`
   1. In the `Virtual Reality SDKs` list, add `OpenVR` by clicking on the plus icon
 
