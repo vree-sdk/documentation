@@ -42,7 +42,7 @@
   1. In the explorer, copy and extract `SoftwareActivation.zip` somewhere outside of the project structure (e.g. on the Desktop).
   1. Open the extracted folder and double click `activateLicense.bat` to create an empty Xsens license.
 - C++ Redistributable prerequisite
-  1. Download and install the `vc_redist.x86.exe` C++ Redistributable from the [Microsoft downloads page](https://developer.vree.world/dashboard/login "Microsoft downloads page").
+  1. Download and install the `vc_redist.x86.exe` C++ Redistributable from the [Microsoft downloads page](https://www.microsoft.com/en-us/download/details.aspx?id=53840 "Microsoft downloads page").
 - Firewall exception for Unity
   1. In Windows, search for `Firewall` and select `Windows Defender with Advanced Security`
   1. Click on Inbound Rules.
